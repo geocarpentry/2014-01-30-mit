@@ -1,32 +1,19 @@
 ---
 layout: bootcamp
 root: .
-venue: Euphoric State University
-address: 123 College Street, Euphoria
+venue: Massachusetts Institute of Technology
+address: 77 Massachusetts Avenue, Room ??
 country: United-States
-humandate: June 17-18, 2020
+humandate: January 30-31, 2014
 humantime: 9:00 am - 4:30 pm
-startdate: 2020-06-17
-enddate: 2020-06-18
-latlng: 41.7901128,-87.6007318
+startdate: 2014-01-30
+enddate: 2020-01-31
+latlng: 42.359392,-71.093271
 registration: restricted
-instructor: ["Grace Hopper", "Alan Turing"]
-contact: random@software-carpentry.org
+instructor: ["Aron Ahmadia", "Randy Olson"]
+contact: aron@ahmadia.net
 ---
-<div align="center">
-  <p><strong><em>
-      This page is a template for bootcamp home pages.
-      <br/>
-      Please see
-      <a href="https://github.com/swcarpentry/bc">https://github.com/swcarpentry/bc</a>
-      for instructions on how to create
-      a repository for your bootcamp.
-      <br/>
-      Please also see
-      the <a href="{{page.root}}/lessons/index.html">index to our lessons</a>
-      and the <a href="{{page.root}}/lessons/setup.html">index to setup instructions</a>.
-  </em></strong></p>
-</div>
+
 {% include bootcamps/instructors.html %}
 {% include bootcamps/what.html %}
 {% include bootcamps/who.html %}
@@ -93,3 +80,8 @@ contact: random@software-carpentry.org
   <li><a href="{{page.root}}/lessons/ref/python.html">Python</a></li>
   <li><a href="{{page.root}}/lessons/ref/sql.html">SQL</a></li>
 </ul>
+
+<h2>Instructors</h2>
+
+{% include people/ahmadia.a.html %}
+{% include people/olson.r.html %}

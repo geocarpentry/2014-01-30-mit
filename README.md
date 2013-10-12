@@ -7,4 +7,4 @@
 
 Please see the boot camp [website](http://rhiever.github.io/2014-01-30-mit/) for the schedule and installation instructions.
 
-Please contact [Aron Ahmadia](aron@ahmadia.net) with any questions.
+Please contact [Aron Ahmadia](mailto:aron@ahmadia.net) with any questions.

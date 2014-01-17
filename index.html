@@ -13,12 +13,7 @@ registration: restricted
 instructor: ["Aron Ahmadia", "Randal Olson"]
 contact: aron@ahmadia.net
 ---
-<div align="center">
-  <p><strong><em>
-      Please see the <a href="{{page.root}}/lessons/index.html">index to our lessons</a>
-      and the <a href="{{page.root}}/lessons/setup.html">index to setup instructions</a>.
-  </em></strong></p>
-</div>
+
 {% include bootcamps/instructors.html %}
 {% include bootcamps/what.html %}
 {% include bootcamps/who.html %}
@@ -30,13 +25,12 @@ contact: aron@ahmadia.net
 
 <h2>Setup</h2>
 
-To participate in a Software Carpentry bootcamp, 
+To participate in this Software Carpentry bootcamp, 
 you will need working copies of:
 {% include setup/overview-bash.html %}
 {% include setup/overview-git.html %}
 {% include setup/overview-editor.html %}
 {% include setup/overview-python.html %}
-{% include setup/overview-r.html %}
 
 The instructions for installing each of these components is organzed below by operating system.  
 
@@ -57,10 +51,10 @@ The instructions for installing each of these components is organzed below by op
 	
 <h3>Windows</h3>
 	<div class="well">
-{% include setup/windows-swc.html %}
 {% include setup/windows-git.html %}
 {% include setup/windows-editor.html %}
 {% include setup/windows-anaconda.html %}
+{% include setup/windows-swc.html %}
 <!--{% include setup/windows-r.html %}-->
 	</div>
 	
@@ -85,23 +79,6 @@ The instructions for installing each of these components is organzed below by op
 
 <hr/>
 
-<h2>Topics</h2>
-
-<div class="row-fluid">
-  <div class="span6">
-    <h3><a href="lessons/swc-shell/tutorial.html">The Unix Shell</a></h3>
-    <ul>
-      <li>{% include guide-shell/intro/title.md %}</li>
-      <li>{% include guide-shell/filedir/title.md %}</li>
-      <li>{% include guide-shell/create/title.md %}</li>
-      <li>{% include guide-shell/pipefilter/title.md %}</li>
-      <li>{% include guide-shell/loop/title.md %}</li>
-      <li>{% include guide-shell/scripts/title.md %}</li>
-      <li>{% include guide-shell/find/title.md %}</li>
-    </ul>
-  </div>
-</div>
-
 <hr/>
 
 <h2>Reference Guides</h2>
@@ -109,5 +86,4 @@ The instructions for installing each of these components is organzed below by op
 <ul>
   <li><a href="{{page.root}}/lessons/ref/shell.html">The Unix Shell</a></li>
   <li><a href="{{page.root}}/lessons/ref/python.html">Python</a></li>
-  <li><a href="{{page.root}}/lessons/ref/sql.html">SQL</a></li>
 </ul>

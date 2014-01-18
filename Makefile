@@ -34,6 +34,7 @@ NOTEBOOK_SRC = \
 	$(wildcard bash/novice/*.ipynb) \
 	$(wildcard git/novice/*.ipynb) \
 	$(wildcard python/novice/*.ipynb) \
+	$(wildcard python/intermediate/*.ipynb) \
 	$(wildcard sql/novice/*.ipynb)
 NOTEBOOK_TMP = \
 	$(patsubst %.ipynb,$(TMP)/%.html,$(NOTEBOOK_SRC))

@@ -3,8 +3,8 @@
 ## Massachusetts Institute of Technology
 **When:** January 30-31, 2014
 
-**Where:** 77 Massachusetts Avenue, Room ??, Cambridge, MA 02139
+**Where:** 77 Massachusetts Avenue, Room 48-316, Cambridge, MA 02139
 
-Please see the boot camp [website](http://rhiever.github.io/2014-01-30-mit/) for the schedule and installation instructions.
+Please see the boot camp [website](http://geocarpentry.github.io/2014-01-30-mit/) for the schedule and installation instructions.
 
 Please contact [Aron Ahmadia](mailto:aron@ahmadia.net) with any questions.

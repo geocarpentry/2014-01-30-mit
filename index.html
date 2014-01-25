@@ -2,7 +2,7 @@
 layout: bootcamp
 root: .
 venue: Massachusetts Institute of Technology
-address: 77 Massachusetts Avenue, Room ??
+address: 77 Massachusetts Avenue, Room 48-316
 country: United-States
 humandate: Jan 30-31, 2014
 humantime: 9:00 am - 4:30 pm
@@ -14,6 +14,8 @@ instructor: ["Aron Ahmadia", "Randy Olson"]
 contact: aron@ahmadia.net
 ---
 
+<h2>About</h2>
+
 {% include bootcamps/instructors.html %}
 {% include bootcamps/what.html %}
 {% include bootcamps/who.html %}
@@ -23,54 +25,184 @@ contact: aron@ahmadia.net
 
 <hr/>
 
+
 <h2>Setup</h2>
+
+To participate in this Software Carpentry bootcamp, 
+you will need working copies of:
+{% include setup/overview-bash.html %}
+{% include setup/overview-git.html %}
+{% include setup/overview-editor.html %}
+{% include setup/overview-python.html %}
+
+The instructions for installing each of these components is organized below by operating system.  
 
 <div class="row-fluid">
   <div class="span6">
-    {% include setup/overview-bash.html %}
-    {% include setup/overview-editor.html %}
+
+	
+<h3>MacOSX</h3>
+	<div class="well">
+{% include setup/macosx-bash.html %}
+{% include setup/macosx-editor.html %}
+{% include setup/macosx-git.html %}
+{% include setup/macosx-python.html %}
+<!--{% include setup/macosx-r.html %}-->
+	</div>
   </div>
   <div class="span6">
-    {% include setup/overview-git.html %}
-    {% include setup/overview-python.html %}
-  </div>
+	
+<h3>Windows</h3>
+	<div class="well">
+{% include setup/windows-git.html %}
+{% include setup/windows-editor.html %}
+{% include setup/windows-anaconda.html %}
+{% include setup/windows-swc.html %}
+<!--{% include setup/windows-r.html %}-->
+	</div>
+	
+<h3>Linux</h3>
+	<div class="well">
+{% include setup/linux-bash.html %}
+{% include setup/linux-git.html %}
+{% include setup/linux-editor.html %}
+{% include setup/linux-python.html %}
+<!--{% include setup/linux-r.html %}-->
+	</div>
+</div>
 </div>
 
 <hr/>
 
-<h2>Topics</h2>
+<h2>Bootcamp materials</h2>
+<hr />
 
-<div class="row-fluid">
-  <div class="span6">
-    <h3><a href="lessons/swc-shell/tutorial.html">The Unix Shell</a></h3>
-    <ul>
-      <li>{% include guide-shell/intro/title.md %}</li>
-      <li>{% include guide-shell/filedir/title.md %}</li>
-      <li>{% include guide-shell/create/title.md %}</li>
-      <li>{% include guide-shell/pipefilter/title.md %}</li>
-      <li>{% include guide-shell/loop/title.md %}</li>
-      <li>{% include guide-shell/scripts/title.md %}</li>
-      <li>{% include guide-shell/find/title.md %}</li>
-    </ul>
-  </div>
-  <div class="span6">
-    <h3><a href="lessons/swc-db/tutorial.html">Databases</a></h3>
-    <ul>
-      <li>{% include guide-db/select/title.md %}</li>
-      <li>{% include guide-db/distinct/title.md %}</li>
-      <li>{% include guide-db/filter/title.md %}</li>
-      <li>{% include guide-db/calc/title.md %}</li>
-      <li>{% include guide-db/sort/title.md %}</li>
-      <li>{% include guide-db/null/title.md %}</li>
-      <li>{% include guide-db/aggregate/title.md %}</li>
-      <li>{% include guide-db/grouping/title.md %}</li>
-      <li>{% include guide-db/join/title.md %}</li>
-      <li>{% include guide-db/create/title.md %}</li>
-      <li>{% include guide-db/transactions/title.md %}</li>
-      <li>{% include guide-db/programming/title.md %}</li>
-    </ul>
-  </div>
-</div>
+Bootcamp materials can be downloaded here: <a href="https://github.com/geocarpentry/2014-01-30-mit/archive/gh-pages.zip">https://github.com/geocarpentry/2014-01-30-mit/archive/gh-pages.zip</a>
+
+<h2>Etherpad</h2>
+<hr />
+
+Etherpad can be reached here: <a href="https://etherpad.mozilla.org/2014-01-21-mit">https://etherpad.mozilla.org/2014-01-21-mit</a>
+
+<h2>Agenda</h2>
+<hr/>
+
+<table class="table table-striped">
+	<tr>
+		<th colspan="3"> Day 1 </th>
+	</tr>
+	<tr>
+		<td> 08:00-09:00 </td>
+		<td> Setup Help </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> 09:00-09:30 </td>
+		<td> <a href="{{page.root}}/overview/overview.html">Introduction and Overview</a> </td>
+		<td> Aron Ahmadia </td>
+	</tr>
+	<tr>
+		<td> 09:30-10:30 </td>
+		<td> <a href="{{page.root}}/bash/novice/index.html">
+			Automating Your Actions (Shell Part 1)</a> </td>
+		<td> Aron Ahmadia </td>
+	</tr>
+	<tr>
+		<td> 10:30-10:45 </td>
+		<td> Break </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> 10:45-12:00 </td>
+		<td> <a href="{{page.root}}/bash/novice/index.html">
+			Automating Your Actions (Shell Part 2)</a> </td>
+		<td> Randal Olson </td>
+	</tr>
+	<tr>
+		<td> 12:00-13:00 </td>
+		<td> Lunch Break </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> 13:00-13:30 </td>
+		<td> <a href="http://ipython.org/ipython-doc/stable/interactive/tutorial.html">
+			IPython</a>
+			and
+			<a href="http://ipython.org/ipython-doc/stable/interactive/notebook.html">
+			IPython Notebook Orientation </a></td>
+		<td> Aron Ahmadia </td>
+	</tr>
+	<tr>
+		<td> 13:30-14:45 </td>
+		<td> <a href="http://nbviewer.ipython.org/github/geocarpentry/2014-01-21-erdc/blob/gh-pages/python/intermediate/01-intro-python.ipynb">
+			Intro to Python Programming and Analysis (Python Part 1)</a></td>
+		<td> Aron Ahmadia </td>
+	</tr>
+	<tr>
+		<td> 14:45-15:15 </td>
+		<td> Break </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> 15:15-16:30 </td>
+		<td> <a href="http://nbviewer.ipython.org/github/geocarpentry/2014-01-21-erdc/blob/gh-pages/python/intermediate/02-modularization-documentation.ipynb">
+			Modularization and Documentation (Python Part 2)</a></td>
+		<td> Randal Olson </td>
+	</tr>
+	<tr>
+		<th colspan="3"> Day 2 </th>
+	</tr>
+	<tr>
+		<td> 08:00-09:00 </td>
+		<td> Office Hour </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> 09:00-09:30 </td>
+		<td> <a href="{{page.root}}/git/intermediate/00-intro.html">Introduction to Distributed Version Control</a> </td>
+		<td> Aron Ahmadia </td>
+	</tr>
+	<tr>
+		<td> 09:30-10:30 </td>
+		<td> <a href="{{page.root}}/git/intermediate/01-conversational-git.html">Accessing and Creating Software History (Git Part 1)</a> </td>
+		<td> Aron Ahmadia </td>
+	</tr>
+	<tr>
+		<td> 10:30-10:45 </td>
+		<td> Break </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> 10:45-12:00 </td>
+		<td> <a href="{{page.root}}/git/intermediate/01-conversational-git.html">Sharing and Collaborating with GitHub (Git Part 2)</a> </td>
+		<td> Aron Ahmadia </td>
+	</tr>
+	<tr>
+		<td> 12:00-13:00 </td>
+		<td> Lunch Break </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> 13:00-13:30 </td>
+		<td> Content Review </td>
+		<td> Aron Ahmadia and Randal Olson </td>
+	</tr>
+	<tr>
+		<td> 13:30-14:45 </td>
+		<td> Application Vignette 1 </td>
+		<td> Aron Ahmadia </td>
+	</tr>
+	<tr>
+		<td> 14:45-15:15 </td>
+		<td> Break </td>
+		<td> </td>
+	</tr>
+	<tr>
+		<td> 15:15-16:30 </td>
+		<td> <a href="http://nbviewer.ipython.org/urls/raw2.github.com/geocarpentry/2014-01-21-erdc/gh-pages/lessons/vignettes/Numerical_analysis_with_NumPy.ipynb?create=1">NumPy</a> and <a href="http://nbviewer.ipython.org/urls/raw2.github.com/geocarpentry/2014-01-21-erdc/gh-pages/lessons/vignettes/Plotting_with_matplotlib_and_Basemap.ipynb?create=1">matplotlib/Basemap</a> </td>
+		<td> Randal Olson </td>
+	</tr>
+</table>
 
 <hr/>
 
@@ -79,10 +211,4 @@ contact: aron@ahmadia.net
 <ul>
   <li><a href="{{page.root}}/lessons/ref/shell.html">The Unix Shell</a></li>
   <li><a href="{{page.root}}/lessons/ref/python.html">Python</a></li>
-  <li><a href="{{page.root}}/lessons/ref/sql.html">SQL</a></li>
 </ul>
-
-<h2>Instructors</h2>
-
-{% include people/ahmadia.a.html %}
-{% include people/olson.r.html %}
